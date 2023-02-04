@@ -1,0 +1,10 @@
+15:52:36 **** Incremental Build of configuration Debug for project RS485_F411 ****
+make -j12 all 
+arm-none-eabi-size   RS485_F411.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13772	    120	   1696	  15588	   3ce4	RS485_F411.elf
+Finished building: default.size.stdout
+ 
+
+15:52:37 Build Finished. 0 errors, 0 warnings. (took 239ms)
+

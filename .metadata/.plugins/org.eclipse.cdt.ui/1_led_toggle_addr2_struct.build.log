@@ -1,0 +1,10 @@
+00:07:48 **** Incremental Build of configuration Debug for project 1_led_toggle_addr2_struct ****
+make -j12 all 
+arm-none-eabi-size   1_led_toggle_addr2_struct.elf 
+   text	   data	    bss	    dec	    hex	filename
+    744	      8	   1568	   2320	    910	1_led_toggle_addr2_struct.elf
+Finished building: default.size.stdout
+ 
+
+00:07:48 Build Finished. 0 errors, 0 warnings. (took 177ms)
+

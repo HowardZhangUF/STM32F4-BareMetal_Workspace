@@ -1,0 +1,20 @@
+13:03:28 **** Incremental Build of configuration Debug for project 7_uart_modular_orig ****
+make -j12 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F4 -DSTM32F411RETx -DDEBUG -DSTM32F411xE -c -I../Inc -I"C:/Users/Howard/STM32F4-BareMetal_Workspace/7_uart_modular_orig/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/Howard/STM32F4-BareMetal_Workspace/7_uart_modular_orig/Drivers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F4 -DSTM32F411RETx -DDEBUG -DSTM32F411xE -c -I../Inc -I"C:/Users/Howard/STM32F4-BareMetal_Workspace/7_uart_modular_orig/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/Howard/STM32F4-BareMetal_Workspace/7_uart_modular_orig/Drivers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F4 -DSTM32F411RETx -DDEBUG -DSTM32F411xE -c -I../Inc -I"C:/Users/Howard/STM32F4-BareMetal_Workspace/7_uart_modular_orig/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/Howard/STM32F4-BareMetal_Workspace/7_uart_modular_orig/Drivers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc "../Src/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F4 -DSTM32F411RETx -DDEBUG -DSTM32F411xE -c -I../Inc -I"C:/Users/Howard/STM32F4-BareMetal_Workspace/7_uart_modular_orig/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/Howard/STM32F4-BareMetal_Workspace/7_uart_modular_orig/Drivers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/uart.d" -MT"Src/uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/uart.o"
+arm-none-eabi-gcc -o "7_uart_modular_orig.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Howard\STM32F4-BareMetal_Workspace\7_uart_modular_orig\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="7_uart_modular_orig.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 7_uart_modular_orig.elf
+ 
+arm-none-eabi-size   7_uart_modular_orig.elf 
+arm-none-eabi-objdump -h -S  7_uart_modular_orig.elf  > "7_uart_modular_orig.list"
+   text	   data	    bss	    dec	    hex	filename
+    944	      8	   1568	   2520	    9d8	7_uart_modular_orig.elf
+Finished building: default.size.stdout
+ 
+Finished building: 7_uart_modular_orig.list
+ 
+
+13:03:29 Build Finished. 0 errors, 0 warnings. (took 473ms)
+
